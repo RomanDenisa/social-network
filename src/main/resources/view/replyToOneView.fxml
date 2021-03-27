@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="157.0" prefWidth="400.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.ReplyToOneController">
+   <children>
+      <VBox prefHeight="157.0" prefWidth="400.0">
+         <children>
+            <HBox prefHeight="68.0" prefWidth="400.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="205.0" text="Who do you want to reply to?">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="comboBoxUser" onAction="#handleChange" prefWidth="150.0" promptText="Select user" />
+               </children>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#handleOkButton" prefHeight="26.0" prefWidth="86.0" text="OK">
+               <VBox.margin>
+                  <Insets left="150.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

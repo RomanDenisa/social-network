@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="346.0" prefWidth="527.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.LoginController">
+   <children>
+      <Pane layoutX="9.0" layoutY="19.0" prefHeight="323.0" prefWidth="511.0">
+         <children>
+            <HBox layoutY="-1.0" prefHeight="323.0" prefWidth="511.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="266.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/stars.jpg" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="303.0" prefWidth="101.0" spacing="30.0">
+                     <children>
+                        <Label text="Username">
+                           <VBox.margin>
+                              <Insets left="30.0" top="50.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="68.0" text="Password">
+                           <VBox.margin>
+                              <Insets left="30.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="208.0" prefWidth="155.0" spacing="20.0">
+                     <children>
+                        <TextField fx:id="textFieldUsername" prefHeight="26.0" prefWidth="161.0">
+                           <VBox.margin>
+                              <Insets top="45.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <PasswordField fx:id="textFieldPassword" />
+                        <Button mnemonicParsing="false" onAction="#handleLogin" prefHeight="26.0" prefWidth="151.0" text="Login" />
+                        <Label prefHeight="16.0" prefWidth="19.0" text="or">
+                           <VBox.margin>
+                              <Insets left="65.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#handleCreateAccount" prefHeight="30.0" prefWidth="152.0" text="Create an account" />
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="30.0" top="40.0" />
+               </padding>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

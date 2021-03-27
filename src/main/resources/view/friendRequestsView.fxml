@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="426.0" prefWidth="651.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.FriendRequestsController">
+   <children>
+      <Label text="SentTo" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="10.0" />
+      <Label layoutX="344.0" layoutY="10.0" text="ReceivedFrom" AnchorPane.leftAnchor="344.0" AnchorPane.topAnchor="10.0" />
+      <VBox layoutX="26.0" layoutY="30.0" prefHeight="370.0" prefWidth="556.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <SplitPane dividerPositions="0.5155320555188367" prefHeight="289.0" prefWidth="607.0">
+              <items>
+                <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="289.0" prefWidth="316.0">
+                     <children>
+                        <TableView fx:id="tableViewSent" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="288.0" prefWidth="309.0" AnchorPane.bottomAnchor="0.8000000000000114" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="tableSentColumnFirstName" prefWidth="75.0" text="FirstName" />
+                            <TableColumn fx:id="tableSentColumnLastName" prefWidth="75.0" text="LastName" />
+                              <TableColumn fx:id="tableSentColumnStatus" prefWidth="75.0" text="Status" />
+                              <TableColumn fx:id="tableSentColumnDate" prefWidth="75.0" text="Date" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <TableView fx:id="tableViewReceived" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="288.0" prefWidth="290.0" AnchorPane.bottomAnchor="0.8000000000000114" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="tableReceivedColumnFirstName" prefWidth="75.0" text="FirstName" />
+                            <TableColumn fx:id="tableReceivedColumnLastName" prefWidth="75.0" text="LastName" />
+                              <TableColumn fx:id="tableReceivedColumnStatus" prefWidth="75.0" text="Status" />
+                              <TableColumn fx:id="tableReceivedColumnDate" prefWidth="75.0" text="Date" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+            <HBox prefHeight="45.0" prefWidth="556.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleCancelSendRequest" prefHeight="30.0" prefWidth="72.0" text="Cancel">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleApproveRequest" text="Approve">
+                     <HBox.margin>
+                        <Insets left="250.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleRejectRequest" text="Reject">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

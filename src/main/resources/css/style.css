@@ -1,0 +1,44 @@
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: Arial;
+    -fx-font-weight: bold;
+    -fx-background-color: #008B8B;
+    -fx-border-style: dotted solid;
+    -fx-border-color: #663399;
+    -fx-border-radius: 3px;
+    -fx-border-width: 3px;
+}
+
+.button:hover
+{
+    -fx-background-color: #008080;
+}
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight:bold;
+    -fx-text-fill: #9370DB;
+    -fx-font-family: "Arial";
+}
+.table-row-cell:selected {
+    -fx-background-color:#008080 ;
+
+}
+.table-row-cell:selected .text {
+    -fx-fill: #ffffff;
+}
+.table-view
+{
+    -fx-background-color: linear-gradient(#66CDAA 0%, #D3D3D3 100%);
+}
+
+.root
+{
+    -fx-background-color: #ffba93;
+}
+
+/*linear-gradient(#f9e0ae 70%, #bedcfa 50%);*/
+
+.split-pane
+{
+    -fx-background-color: #ff8e71 ;
+}
