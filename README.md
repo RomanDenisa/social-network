@@ -2,6 +2,8 @@
 
 Java application that simulates a social network
 
+->on branch projectBranch
+
 Functionalities:
 
 ->log in and create an account
